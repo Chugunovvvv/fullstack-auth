@@ -25,9 +25,7 @@ export class UserService {
       where: { email },
       include: { accounts: true },
     });
-    if (!user) {
-      throw new NotFoundException('User not found');
-    }
+
     return user;
   }
 

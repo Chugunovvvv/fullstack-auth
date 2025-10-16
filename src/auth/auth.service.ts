@@ -19,6 +19,7 @@ export class AuthService {
       AuthMethod.CREDENTIALS,
       false,
     );
+    console.log('Registered new user', newUser);
     return this.saveSession(newUser);
   }
 
